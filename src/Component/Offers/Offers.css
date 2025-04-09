@@ -1,11 +1,14 @@
 .offers{
-    width: 65%;
+    width: 85%;
     height: 60vh;
     display: flex;
     margin: auto;
     padding: 0px 140px ;
     margin-bottom: 0px 150px;
     background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+}
+.offers > * {
+    margin-top: -40px; /* Moves all child elements (e.g., items in .offers) up by 10px */
 }
 .offers-left{
     flex: 1;
@@ -15,12 +18,19 @@
 }
 .offers-left h1{
     color: #171717;
-    font-size: 80px;
+    font-size: 55px;
     font-weight: 600;
+    background: linear-gradient(180deg, #fde1ff, #9b4d96, #00b894);
+    color: transparent;
+    background-clip: text;
+    
+}
+.ex{
+    margin-top: 30px;
 }
 .offers-left p{
     color: #171717;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
 }
 .offers-left button{
@@ -33,6 +43,7 @@
     font-size: 22px;
     font-weight: 500;
     margin-top: 30px;
+    margin-left: 50px;
     cursor: pointer;
 }
 .offers-right{
@@ -41,4 +52,146 @@
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+    transform: scale(0.75);
+}
+
+@media (max-width: 1280px) {
+    .offers {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+        max-width: 90%;
+        margin: 60px auto;
+        padding: 20px;
+        height: auto;
+      }
+    .offers-left h1{
+        font-size: 40px;
+    }
+    .offers-left p{
+        font-size: 18px;}
+        .offers-right img{
+            width: 300px;
+            margin-top:-20px ;
+        }
+        .offers-left button{
+            width: 220px;
+            height: 50px;
+            font-size: 18px;
+        }
+        .offers-right {
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+        .offers > * {
+            margin-top: -40px; /* Moves all child elements (e.g., items in .offers) up by 10px */
+        }
+}
+@media (max-width: 1024px) {
+    .offers {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto 80px auto;
+        padding: 20px;
+        height: auto;
+      }
+    
+    .offers-left h1{
+        font-size: 30px;
+    }
+    .offers-left p{
+        font-size: 16px;}
+        .offers-right img{
+            width: 200px;
+            margin-top:-20px ;
+        }
+        .offers-left button{
+            width: 160px;
+            height: 40px;
+            font-size: 16px;
+        }
+        .offers-right {
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+        .offers > * {
+            margin-top: -40px; /* Moves all child elements (e.g., items in .offers) up by 10px */
+        }
+}
+@media (max-width: 800px) {
+    .offers {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto 60px auto; /* Center and space from bottom */
+        padding: 20px;
+        height: auto; /* Makes sure it adapts to content */
+      
+    }
+    .offers > * {
+        margin-top: -40px; /* Moves all child elements (e.g., items in .offers) up by 10px */
+    }
+    .offers-left h1{
+        font-size: 22px;
+    }
+    .offers-left p{
+        font-size: 13px;}
+        .offers-right img{
+            width: 180px;
+            margin-top:-20px ;
+        }
+        .offers-left button{
+            width: 140px;
+            height: 30px;
+            font-size: 12px;
+        }
+        .offers-right {
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+        .offers > * {
+            margin-top: -40px; /* Moves all child elements (e.g., items in .offers) up by 10px */
+        }
+}
+
+@media (max-width: 500px) {
+    .offers {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+        margin: 0 auto 40px auto; /* Center horizontally */
+        width: 100%;
+        max-width: 90%; /* Prevents full edge-to-edge */
+        height: auto; /* Adapts height to content */
+      }
+    .offers-left h1{
+        font-size: 16px;
+    }
+    .offers-left p{
+        font-size: 10px;}
+        .offers-right img{
+            width: 120px;
+            margin-top:-20px ;
+        }
+        .offers-left button{
+            width: 120px;
+            height: 25px;
+            font-size: 10px;
+            margin-top: 12px;  
+        }
+        
+.offers > * {
+    margin-top: -40px; /* Moves all child elements (e.g., items in .offers) up by 10px */
+}
 }

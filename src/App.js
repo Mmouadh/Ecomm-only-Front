@@ -15,7 +15,7 @@ import Kids_banner from "./Component/Assest/banner_kids.png";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/Ecomm-only-Front">
+      <BrowserRouter  basename="/Ecomm-only-Front">
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
