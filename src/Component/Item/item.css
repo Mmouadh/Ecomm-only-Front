@@ -1,7 +1,6 @@
-.item{
-    width: 280px;
-    gap: 20px;
-}
+.item img {
+    width: 100%;
+  }
 .item p{
     margin: 6px 0px;
 }

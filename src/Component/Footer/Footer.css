@@ -4,11 +4,13 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding-top: 100px;
 }
 .footer-logo{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
+   
 }
 .footer-logo p{
     color: #383838;
@@ -21,6 +23,7 @@
     gap: 50px;
     color: #252525;
     font-size: 20px;
+margin-left: 20px ;
 }
 .footer-links li{
     cursor: pointer;

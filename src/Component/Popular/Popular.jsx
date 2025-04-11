@@ -1,6 +1,6 @@
 import React from "react";
 import "./Popular.css";
-import data_product from "../Assest/data";
+import all_product from "../Assest/all_product";
 import Item from "../Item/Item";
 
 const Popular = () => {
@@ -9,18 +9,19 @@ const Popular = () => {
       <h1>Popular In Women</h1>
       <hr />
       <div className="popular-item">
-        {data_product.map(Item, (i) => {
-          return (
+        {all_product
+          .filter((item) => item.category === "women")
+          .slice(0, 4)
+          .map((item, i) => (
             <Item
-              key={i}
-              id={Item.id}
-              name={Item.name}
-              image={Item.image}
-              new_price={Item.new_price}
-              old_price={Item.old_price}
+              key={item.id}
+              id={item.id}
+              name={item.name}
+              image={item.image}
+              new_price={item.new_price}
+              old_price={item.old_price}
             />
-          );
-        })}
+          ))}
       </div>
     </div>
   );

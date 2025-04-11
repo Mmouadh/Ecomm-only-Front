@@ -8,8 +8,8 @@ const LoginSingUp = () => {
         <h1>Sign Up</h1>
         <div className="loginsignup-field">
           <input type="text" placeholder='Your Name'/>
-          <input type="email" placeholder='Your Mail@mail' />
-          <input type="password" placeholder='PassWord' />
+          <input type="email" placeholder='Your Em@il' />
+          <input type="password" placeholder='Password' />
         </div>
         <button>Continue</button>
         <p className="loginsignup-login">Already have an account <span>Login here</span></p>

@@ -172,7 +172,7 @@
         padding: 20px;
         margin: 0 auto 40px auto; /* Center horizontally */
         width: 100%;
-        max-width: 90%; /* Prevents full edge-to-edge */
+        max-width: 100%; /* Prevents full edge-to-edge */
         height: auto; /* Adapts height to content */
       }
     .offers-left h1{
