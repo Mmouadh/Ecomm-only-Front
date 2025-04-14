@@ -163,6 +163,11 @@ height: 30px;}
     .cartitems-promobox button{
         width: 110px;
     }
-    
+    .cartitems-total h1 {
+        font-size: 22px;
+    }
+    .cartitems-total-items h3{
+        font-size: 18px;
+    }
 }
 
