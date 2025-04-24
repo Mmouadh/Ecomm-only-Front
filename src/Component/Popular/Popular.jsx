@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import "./Popular.css";
-import all_product from "../Assest/all_product";
 import Item from "../Item/Item";
 
 const Popular = () => {
+
+   const [popular,setPopular] = useState ([]);
+  
+        useEffect (()=>{
+                fetch('http://localhost:4000/popular')
+                .then((response)=>response.json())
+                .then((data)=>setPopular(data))
+        },[])
+  
   return (
     <div className="popular">
       <h1>Popular In Women</h1>
       <hr />
       <div className="popular-item">
-        {all_product
+        {popular
           .filter((item) => item.category === "women")
           .slice(0, 4)
           .map((item, i) => (
